@@ -4,5 +4,5 @@ export const skills = [
   { name: 'Computational Biology', icon: Laptop },
   { name: 'Protein Design', icon: Dna },
   { name: 'Drug Design', icon: Pill },
-  { name: 'Research Methods', icon: BookOpen },
+  { name: 'Scientific Writing', icon: BookOpen },
 ];

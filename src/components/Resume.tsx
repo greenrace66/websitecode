@@ -1,6 +1,6 @@
 import React from 'react';
 import { FileDown, Award, Book } from 'lucide-react';
-import pdf from "/src/cvnew.pdf"
+import pdf from "/src/cvnew2.pdf"
 const Resume = () => {
   const certifications = [
     {

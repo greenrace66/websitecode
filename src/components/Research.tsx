@@ -36,7 +36,7 @@ const Research = () => {
           </div>
           <div className="space-y-6">
             <div className="border-l-4 border-blue-600 pl-4">
-              <h4 className="font-semibold">Coming Soon (Maybe?)</h4>
+              <h4 className="font-semibold">Structure Based Drug Design of Novel Inhibitors targetting the bacterial thiamine biosynthesis pathway ( Preprint available in Bioarxiv )</h4>
               <p className="text-gray-600"></p>
             </div>
             <div className="border-l-4 border-blue-600 pl-4">
