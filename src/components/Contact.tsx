@@ -72,11 +72,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="bg-slate-50 py-24">
       <Toaster position="top-center" />
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Get in Touch</h2>
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="mx-auto mb-12 max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Contact</p>
+          <h2 className="mt-3 text-4xl font-semibold text-slate-950 md:text-5xl">Get in touch</h2>
+          <p className="mt-4 leading-7 text-slate-600">
+            Open to research conversations, computational biology collaborations, and technical discussions.
+          </p>
+        </div>
+        <div className="grid gap-8 md:grid-cols-2">
           <ContactInfo />
           <ContactForm
             formData={formData}

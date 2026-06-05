@@ -1,49 +1,50 @@
-import React from 'react';
-import { Microscope, BookOpen, Target, Lightbulb } from 'lucide-react';
+import { BookOpen, Microscope, Target } from 'lucide-react';
+import { researchFocus } from '../constants/portfolio';
 
 const Research = () => {
   return (
-    <section id="research" className="py-20 bg-gray-50">
+    <section id="research" className="bg-slate-50 py-24">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Research Interests</h2>
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">Research</p>
+          <h2 className="mt-3 text-4xl font-semibold text-slate-950 md:text-5xl">
+            Structural computational biology with a builder's bias.
+          </h2>
+          <p className="mt-5 leading-8 text-slate-600">
+            I work across molecular visualization, simulation, drug design automation, and protein engineering, with a growing focus on AI-driven in silico workflows.
+          </p>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <div className="flex items-center mb-4">
-              <Microscope className="w-6 h-6 text-blue-600 mr-3" />
-              <h3 className="text-xl font-semibold">Current Focus</h3>
-            </div>
-            <p className="text-gray-600">
-              Exploring the use of machine learning in protein design and understanding its mechanism.
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+            <Microscope className="h-7 w-7 text-slate-950" />
+            <h3 className="mt-5 text-xl font-semibold text-slate-950">Current focus</h3>
+            <p className="mt-3 leading-7 text-slate-600">
+              AI and deep learning applications for in silico drug design and protein binder design.
             </p>
           </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <div className="flex items-center mb-4">
-              <Target className="w-6 h-6 text-blue-600 mr-3" />
-              <h3 className="text-xl font-semibold">Research Goals</h3>
-            </div>
-            <p className="text-gray-600">
-              To learn more about the respective field and implement applications.
+          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+            <Target className="h-7 w-7 text-slate-950" />
+            <h3 className="mt-5 text-xl font-semibold text-slate-950">Research direction</h3>
+            <p className="mt-3 leading-7 text-slate-600">
+              Comutational Biology, Bioinformatics, Structural Biology, Scientific Computing 
+            </p>
+          </div>
+          <div className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm">
+            <BookOpen className="h-7 w-7 text-slate-950" />
+            <h3 className="mt-5 text-xl font-semibold text-slate-950">Publication</h3>
+            <p className="mt-3 leading-7 text-slate-600">
+              Structure-Based Drug Design of Novel Inhibitors Targeting the Thiamine Biosynthesis Pathway in Bacteria. Preprint available at bioRxiv.
             </p>
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-lg shadow-sm">
-          <div className="flex items-center mb-6">
-            <BookOpen className="w-6 h-6 text-blue-600 mr-3" />
-            <h3 className="text-xl font-semibold">Publications & Presentations</h3>
-          </div>
-          <div className="space-y-6">
-            <div className="border-l-4 border-blue-600 pl-4">
-              <h4 className="font-semibold">Structure Based Drug Design of Novel Inhibitors targetting the bacterial thiamine biosynthesis pathway ( Preprint available in Bioarxiv )</h4>
-              <p className="text-gray-600"></p>
-            </div>
-            <div className="border-l-4 border-blue-600 pl-4">
-              <h4 className="font-semibold"></h4>
-              <p className="text-gray-600"></p>
-            </div>
-          </div>
+        <div className="mt-8 flex flex-wrap justify-center gap-2">
+          {researchFocus.map((focus) => (
+            <span key={focus} className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-600">
+              {focus}
+            </span>
+          ))}
         </div>
       </div>
     </section>
